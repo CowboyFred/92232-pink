@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: pink</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+  </head>
+  <body>
+      <header>
+          <section class="top-menu">
+              <h1 class="top-menu__logo">Pink</h1>
+              <div class="top-menu__btn"></div>
+              <div class="top-menu__nav">
+                  <ul>
+                      <li class="top-menu__nav__element">
+                          <a class="top-menu__nav__element__link" href="">Информация</a>
+                      </li>
+                      <li class="top-menu__nav__element">
+                          <a class="top-menu__nav__element__link" href="">Блог</a>
+                      </li>
+                      <li class="top-menu__nav__element">
+                          <a class="top-menu__nav__element__link" href="">Отзывы</a>
+                      </li>
+                      <li class="top-menu__nav__element">
+                          <a class="top-menu__nav__element__link" href="">Конкурс</a>
+                      </li>
+                  </ul>
+              </div>
+          </section>
+          <div class="header-content">
+              <h2 class="header-content__title">Конкурс на самое безбашеное путешествие с Пинк</h2>
+          </div>
+      </header>
+      
+      
+      
+      <div class="main-content">
+
+          <form action="/echo" class="form" method="post">
+             
+              <p class="form__description"> Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+              
+              <div class="form__introduce">
+                  <h2 class="form__introduce__name"> Имя:*</h2>
+                  <input type="text" class="form__introduce__name-in" value="Введите ваше имя">
+                  <h2 class="form__introduce__surname"> Фамилия:*</h2>
+                  <input type="text" class="form__introduce__surname-in" value="Укажите фамилию">
+                  <h2 class="form__introduce__patronymic"> Отчество:</h2>
+                  <input type="text" class="form__introduce__patronymic-in" value="Ну и отчество тоже">
+              </div>
+              <div class="form__app">
+                  <h2 class="form__app__title">С каким приложением путешествовали? *</h2>
+                  <input type="radio" class="form__app__radio" name="app" id="iOS" checked><label for="iOS" class="form__app__label">Pink для iOS</label><br>
+                  <input type="radio" class="form__app__radio" name="app" id="android"><label for="android" class="form__app__label">Pink для Android</label><br>
+                  <input type="radio" class="form__app__radio" name="app" id="win"><label for="win" class="form__app__label">Windows Phone</label><br>
+              </div>
+              
+              <div class="form--travel-date">
+                  <h2 class="form--tavel-date--label"> Когда вы путешествовали? *</h2>
+                  <input type="date" class="form--travel-date--departure" name="departure">
+                  <h3 class="form--travel-date--dearture--label">дата выезда</h3>
+                  <div class="form--travel-date--duration">
+                      <div class="form--travel-date--duration--plus-btn"></div>
+                      <input type="number" class="form--travel-date--duration--days">
+                      <div class="form--travel-date--duration--minus-btn"></div>
+                  </div>
+                  <h3 class="form--travel-date--duration--label">Продолжительность</h3>
+                  <input type="date" class="form--travel-date--return" name="departure">
+                  <h3 class="form--travel-date--dearture--label">дата возвращения</h3>
+              </div>
+              
+              <div class="form--companions">
+                  <div class="form--companions--number">
+                      <div class="form--companions--number--plus-btn"></div>
+                      <input type="number" class="form--companions--number--quantity">
+                      <div class="form--companions--number--minus-btn"></div>
+                  </div> 
+                  <div class="form--companions--about">
+                      <h3 class="form--companions--about--label-№">№</h3>
+                      <h3 class="form--companions--about--label"> Имя*</h3>
+                      <div class="form--companions--about--co-number"></div>
+                      <input type="text" class="form--companions--about--name" value="Введите ваше имя">
+                      <h3 class="form--companions--about--nick-label">Прозвище</h3>
+                      <input type="text" class="form--companions--about--nick" value="Ну как же без этого">
+                  </div>           
+              </div>
+              
+              <div class="form--achievments">
+                  <h2 class="form--achievments--label">Ваши безбашенные достижения в путешествии</h2>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="shark" checked> <label for="shark" class="form--achievments--chkbox--label"> Сделал селфи с акулой</label>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="baech" checked> <label for="beach" class="form--achievments--chkbox--label"> Обгорел на пляже</label>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="chuck"> <label for="chuck" class="form--achievments--chkbox--label"> Видел Чака Норриса</label>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="shoping"> <label for="shoping" class="form--achievments--chkbox--label">Накупил сувениров</label>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="tower" checked> <label for="tower" class="form--achievments--chkbox--label">Удержал башню</label>
+                  <input type="text" class="form--achievments--chkbox" name="achievment" id="destroy"> <label for="destroy" class="form--achievments--chkbox--label">Разгромил отель</label>
+              </div>
+              
+              <div class="form--photo">
+                  <h2 class="form--photo--label">ВАШИ ФОТОГРАФИИ из поездки *</h2>
+                  <input type="button" class="form--photo--btn" value="Загрузить фото">
+                  <div class="form--photo--album">
+                      <div class="form--photo--album--img__small"></div>
+                  </div>
+              </div>
+              
+              <input type="button" class="form--send-btn" value="Отправить форму">
+          </form>
+      </div>
+      
+      
+      
+      <footer>
+          <a class="home-link" href="index.html"><img src="" alt="Pink logo"></a>
+          <div class="social">
+              <a class="social__tw" href=""><img src="" alt="TW logo"></a>
+              <a class="social__fb" href=""><img src="" alt="FB logo"></a>
+              <a class="social__yt"  href=""><img src="" alt="YT logo"></a>
+          </div>
+          <a class="partner" href="index.html"><img src="" alt="HTML academy logo"></a>
+          
+      </footer>
+      
+      <section class="success">
+          <h2 class="success--label">Ваша заявка отправлена</h2>
+          <p class="success--text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+          <div class="success--btn">ЗАКРЫТЬ ОКНО</div>
+      </section>
+      
+      <section class="failure">
+          <h2 class="failure--label">Что-то пошло не так!</h2>
+          <p class="failure--text">
+Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          <div class="failure--btn">ОК</div>
+      </section>
+      
+      
+
+
+    <!-- <script src="js/script.js"></script> -->
+
+  </body>
+</html>
