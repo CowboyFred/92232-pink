@@ -1,0 +1,31 @@
+.page-header{
+    position: absolute;
+    min-width: @container-min;
+    width: 100%;
+
+    &__logo{
+        display: block;
+        float: left;
+        height: 24px;
+        width: 74px;
+        font-size: 0;
+        background: url('../img/logo-xs.png') 50% 50% no-repeat;
+    }
+}
+
+@media (min-width: @viewport-md){
+    .page-header{
+        position: absolute;
+        min-width: @container-min;
+        width: 100%;
+
+        &__logo{
+            display: block;
+            float: left;
+            height: 41px;
+            width: 147px;
+            background: url('../img/logo-md.png') 50% 50% no-repeat;
+        }
+}
+}
+// @media (min-width: @viewport-lg){}

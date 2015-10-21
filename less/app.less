@@ -1,0 +1,50 @@
+.app{
+    background-color: @bg-color;
+    padding: 28px 20px 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: white;
+
+    &__download-btn{
+        display: inline-block;
+        padding: 14px 35px 0;
+        margin-bottom: 31px;
+        height: 55px;
+        font-size: 18px;
+        line-height: 1;
+        font-weight: 700;
+        color: white;
+        border: 3px solid white;
+        border-radius: 42px;
+    }
+    &__links{
+        margin-bottom: 23px;
+        font-size: 0;
+    }
+
+    &__link{
+        display: inline-block;
+        vertical-align: bottom;
+        margin-right: 33px;
+        width: 47px;
+        height: 57px;
+
+        &--apple{
+            background: url('../img/icon-apple.png') 50% 50% no-repeat;
+        }
+        &--android{
+            background: url('../img/icon-android.png') 50% 75% no-repeat;
+        }
+        &--windows{
+            background: url('../img/icon-windows.png') 50% 75% no-repeat;
+        }
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__description{
+        margin: 0;
+    }
+}
