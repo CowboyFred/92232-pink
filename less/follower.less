@@ -1,0 +1,44 @@
+.follower{
+    position: relative;
+    padding-left: 63px;
+    margin: 0 auto;
+
+    &__number{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 63px;
+        text-align: center;
+
+        &>span{
+            display: block;
+            margin-bottom: 12px;
+            font-size: 14px;
+            line-height: 18/14;
+            color: @c-brand;
+            text-transform: uppercase;
+        }
+
+        &>div{
+            position: relative;
+            height: 63px;
+            padding-top: 12px;
+            font-size: 18px;
+            .form-border();
+            border-right: 0;
+        }
+    }
+    &__name{
+        input{
+            margin-bottom: 20px;
+        }
+
+        input[placeholder="Введите ваше имя"]{
+            border-radius: 0 2px 2px 0;
+        }
+    }
+    &__text{
+        width: 100%;
+    }
+}

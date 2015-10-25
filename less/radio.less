@@ -1,0 +1,44 @@
+.radio{
+    position: relative;
+    display: block;
+    padding: 10px 0 10px 59px;
+    margin: 14px 0 25px;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+
+    &__ind{
+        position: absolute;
+        top: 8px;
+        left: 2px;
+        display: block;
+        width:  35px;
+        height: 35px;
+        text-align: center;
+        background-color: white;
+        border: 10px solid white;
+        border-radius: 50%;
+        box-shadow: 0 0 0 2px @c-bd-gray;
+    }
+
+    &:hover{
+        .radio__ind{
+            box-shadow: 0 0 0 2px darken(@c-bd-gray, 10%);
+        }
+    }
+
+    input{
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+
+        &:checked ~ .radio__ind{
+            background-color: @c-brand;
+        }
+
+        &:active ~ .radio__ind{
+            color: #84c6ff;
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.counter{
+    position: relative;
+    height: 63px;
+    font-size: 0;
+
+    &__field{
+        width: 100%;
+        padding: 0 61px;
+        vertical-align: top;
+        border-radius: 0;
+        text-align: center;
+
+        &:focus, &:hover{
+            border-color: @c-bd-gray !important;
+        }
+    }
+
+    &__minus-btn,
+    &__plus-btn{
+        .form-border();
+
+        position: absolute;
+        top: 0;
+        width: 63px;
+        padding-bottom: 4px;
+        height: 63px;
+        background-color: white;
+
+        &:hover{
+            cursor: pointer;
+            border-color: darken(@c-bd-gray,10%);
+        }
+        &:active{
+            border-color: @c-brand;
+            outline: none;
+        }
+        &:focus{
+            border-color: @c-brand;
+            outline: none;
+        }
+    }
+    &__minus-btn{
+        .minus-btn();
+
+        left: 0;
+        border-radius: 2px 0 0 2px;
+    }
+    &__plus-btn{
+        .plus-btn();
+
+        right: 0;
+        border-radius: 0 2px 2px 0;
+    }
+}

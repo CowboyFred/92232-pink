@@ -4,4 +4,77 @@
     &--contacts{
         padding: 43px 0 0;
     }
+
+    &__footer-logo{
+        display: block;
+        margin-bottom: 40px;
+        font-size: 0;
+
+        img{
+            display: block;
+            margin: 0 auto;
+            width: 145px;
+        }
+    }
+
+    &__social{
+        margin: 0 auto 38px;
+    }
+
+    &__developed{
+        margin: 0 auto;
+        width: 140px;
+        text-align: center;
+        position: relative;
+        font-size: @text-base;
+
+        a{
+            font-size: 0;
+        }
+
+        span{
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+
+        img{
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__map{
+        height: 200px;
+    }
 }
+
+@media (min-width: @viewport-md){
+    .page-footer{
+        text-align: center;
+        font-size: 0;
+        padding: 60px 40px;
+
+        &__footer-logo{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 750%/62;
+            margin-bottom: 10px;
+            margin-left: 1px;
+        }
+
+        &__social{
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 750%/62;
+            max-width: 177px;
+            margin-bottom: 0;
+        }
+
+        &__developed{
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 10px;
+        }
+    }
+}
+// @media (min-width: @viewport-lg){}
